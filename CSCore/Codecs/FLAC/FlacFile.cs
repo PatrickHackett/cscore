@@ -6,7 +6,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using CSCore.Tags.ID3;
+//using CSCore.Tags.ID3;
 
 namespace CSCore.Codecs.FLAC
 {
@@ -107,7 +107,7 @@ namespace CSCore.Codecs.FLAC
             _stream = stream;
 
             //skip ID3v2
-            ID3v2.SkipTag(stream);
+            //ID3v2.SkipTag(stream);
 
             //read fLaC sync
             var beginSync = new byte[4];

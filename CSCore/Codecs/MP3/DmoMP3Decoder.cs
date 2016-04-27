@@ -4,7 +4,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using CSCore.DMO;
-using CSCore.Tags.ID3;
+//using CSCore.Tags.ID3;
 
 namespace CSCore.Codecs.MP3
 {
@@ -88,7 +88,7 @@ namespace CSCore.Codecs.MP3
             long offsetOfFirstFrame = 0;
             stream = new BufferedStream(stream);
 
-            while (ID3v2.SkipTag(stream))
+            //while (ID3v2.SkipTag(stream))
             {
                 /* skip all id3 tags (see https://github.com/filoe/cscore/issues/63)
                  * there are some files with multiple id3v2 tags
